@@ -13,9 +13,9 @@ for item in links:
     item_href = item.find("a").attrs["href"]
 
     if item_text and item_href:
-        print(item_text)
         print(item_href)
-        print("Summary:", item.find("a").parent.parent.find("p").text)
+        print(item_text)
+        print("Brief summary:", item.find("a").parent.parent.find("p").text, "/n")
 
 
 
